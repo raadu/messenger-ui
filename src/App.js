@@ -3,6 +3,7 @@ import AppStyle from './App.module.scss';
 import AttachmentContainer from './Components/AttachmentContainer/AttachmentContainer';
 import ButtonContainer from './Components/ButtonContainer/ButtonContainer';
 import Header from './Components/Header/Header';
+import InputContainer from './Components/InputContainer/InputContainer';
 
 function App() {
   const [addInput, setAddInput] = useState(false);
@@ -38,9 +39,7 @@ function App() {
         <Header
           toggleInput={toggleInput}
         />
-        <div>
-          Input Component
-        </div>
+        <InputContainer/>
       </div>
     }
     </div>
