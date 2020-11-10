@@ -10,7 +10,7 @@ const ButtonContainer = ({
           <div className={ButtonContainerStyle.header}>
               {headerText}
           </div>
-          <div 
+          <div
             className={ButtonContainerStyle.buttonWrapper}
             onClick={() => alert("Button Clicked")}
           >
@@ -21,5 +21,5 @@ const ButtonContainer = ({
         </div>
     );
 }
- 
+
 export default ButtonContainer;

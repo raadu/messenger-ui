@@ -18,6 +18,7 @@ function App() {
       <div className={AppStyle.secondaryContainer}>
         <Header
           toggleInput={toggleInput}
+          headerText="Send Message"
         />
         <AttachmentContainer
           url="/images/colleague.jpg"
@@ -38,6 +39,7 @@ function App() {
       <div className={AppStyle.secondaryContainer}>
         <Header
           toggleInput={toggleInput}
+          headerText="Send Message #1"
         />
         <InputContainer/>
       </div>

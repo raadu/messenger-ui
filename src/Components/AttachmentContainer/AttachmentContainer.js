@@ -10,11 +10,11 @@ const AttachmentContainer = ({
     return (
         <div className={AttachmentStyle.attachmentContainer}>
             <img
+                className={AttachmentStyle.attachmentPreview}
                 src={url}
                 alt={alt}
-                className={AttachmentStyle.attachmentPreview}
             />
-            {title && subtitle ? 
+            {(title || subtitle) ? 
                 <div class={AttachmentStyle.description}>
                     <div className={AttachmentStyle.title}>
                         {title}
@@ -29,5 +29,5 @@ const AttachmentContainer = ({
         </div>
     );
 }
- 
+
 export default AttachmentContainer;
