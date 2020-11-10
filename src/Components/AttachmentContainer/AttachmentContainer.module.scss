@@ -1,0 +1,36 @@
+.attachmentContainer {
+    background-color: #FDFEFE;
+    border-radius: 4px;
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+}
+
+.attachmentPreview {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    background-color: #ECF0F6;
+    opacity: 0.9;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+}
+
+.title {
+    font-weight: 500;
+    padding-left: 2%;
+}
+
+.subtitle {
+    color: #A6ACAF;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-left: 2%;
+}

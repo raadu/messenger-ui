@@ -1,0 +1,33 @@
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerIcon {
+    height: 30px;
+    width: 30px;
+}
+
+.headerTextContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1%;
+}
+
+.nameText {
+    color: #A6ACAF;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.actionText {
+    font-weight: 500;
+}
