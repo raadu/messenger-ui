@@ -10,7 +10,10 @@ const ButtonContainer = ({
           <div className={ButtonContainerStyle.header}>
               {headerText}
           </div>
-          <div className={ButtonContainerStyle.buttonWrapper}>
+          <div 
+            className={ButtonContainerStyle.buttonWrapper}
+            onClick={() => alert("Button Clicked")}
+          >
               <div className={ButtonContainerStyle.buttonText}>
                 {buttonText}
               </div>

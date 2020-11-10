@@ -1,9 +1,12 @@
 import React from 'react';
 import HeaderStyle from './Header.module.scss';
 
-const Header = () => {
+const Header = ({toggleInput}) => {
     return (
-        <div className={HeaderStyle.headerContainer}>
+        <div 
+            className={HeaderStyle.headerContainer}
+            onClick={() => toggleInput()}
+        >
             <div className={HeaderStyle.iconContainer}>
                 <img 
                     src="/icons/messenger.png"

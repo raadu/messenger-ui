@@ -1,13 +1,23 @@
+import React, { useState } from 'react';
 import AppStyle from './App.module.scss';
 import AttachmentContainer from './Components/AttachmentContainer/AttachmentContainer';
 import ButtonContainer from './Components/ButtonContainer/ButtonContainer';
 import Header from './Components/Header/Header';
 
 function App() {
+  const [addInput, setAddInput] = useState(false);
+
+  const toggleInput = () => {
+    setAddInput(!addInput);
+  }
+
   return (
     <div className={AppStyle.mainContainer}>
+    {!addInput ? 
       <div className={AppStyle.secondaryContainer}>
-        <Header/>
+        <Header
+          toggleInput={toggleInput}
+        />
         <AttachmentContainer
           url="/images/colleague.jpg"
           alt="Attachment1"
@@ -23,6 +33,16 @@ function App() {
           subtitle="Subtitle"
         />
       </div>
+      :
+      <div className={AppStyle.secondaryContainer}>
+        <Header
+          toggleInput={toggleInput}
+        />
+        <div>
+          Input Component
+        </div>
+      </div>
+    }
     </div>
   );
 }
