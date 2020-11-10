@@ -1,0 +1,38 @@
+.buttonContainer {
+    background-color: #ECF0F6;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.header {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.buttonWrapper {
+    height: 100%;
+    border-radius: 7px;
+    background-color: #FDFEFE;
+    color:#17202A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    &:hover {
+        background-color: #17202A;
+        color: #FDFEFE;
+        cursor: pointer;
+    }
+}
+
+.buttonText {
+    font-size: 1rem;
+}

@@ -1,5 +1,6 @@
 import AppStyle from './App.module.scss';
 import AttachmentContainer from './Components/AttachmentContainer/AttachmentContainer';
+import ButtonContainer from './Components/ButtonContainer/ButtonContainer';
 import Header from './Components/Header/Header';
 
 function App() {
@@ -10,6 +11,10 @@ function App() {
         <AttachmentContainer
           url="/images/colleague.jpg"
           alt="Attachment1"
+        />
+        <ButtonContainer
+          headerText="this is test text"
+          buttonText="test button"
         />
         <AttachmentContainer
           url="/images/laptop.jpg"
